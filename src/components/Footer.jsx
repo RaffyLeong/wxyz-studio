@@ -1,49 +1,53 @@
-
 const Footer = () => {
   return (
-    <footer className="bg-gray-500 text-white py-[32px] px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-start md:items-center text-sm">
+    <footer className="bg-white text-gray-500 py-8 px-4 mx-20 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-start
+      md:items-center text-sm border-t border-gray-300">
+      
       {/* Company Info */}
-      <div className="mb-4 text-[20px] font-semibold md:mb-0 text-center md:text-left">
+      <div className="mb-4 text-lg  md:mb-0 text-center md:text-left">
         <p>© WXYZ Studio</p>
       </div>
 
+      
+
       {/* Contact Information */}
-      <div className="mb-4 text-[20px] py-[32px] font-semibold md:mb-0 text-center md:text-left">
+      <div className="mb-4 text-lg  md:mb-0 text-center md:text-left">
         <p>Southampton, Hampshire</p>
-        <p className="mb-[32px]">United Kingdom</p>
+        <p className="mb-2">United Kingdom</p>
         <p>
-          <a href="mailto:Contact@wxyzstudio.co.uk">
+          <a href="mailto:Contact@wxyzstudio.co.uk" className="hover:underline">
             sunnywxyzstudio@gmail.com
           </a>
         </p>
         <p>
-          <a href="tel:+447388348419">+44 7388 348 419</a>
+          <a href="tel:+447388348419" className="hover:underline">
+            +44 7388 348 419
+          </a>
         </p>
       </div>
 
       {/* Follow Us & Social Links */}
-      <div className="text-center font-semibold text-[20px] md:text-left">
-        <div className="flex mt-[16px] justify-center md:justify-start space-x-4 text-[24px]">
-
-        <a
-            href="https://www.linkedin.com/in/sunny-weisheng-he/"
+      <div className="text-center  text-lg md:text-left">
+        <div className="flex flex-wrap mt-4 justify-center md:justify-start space-x-4 text-2xl">
+          <a
+            href="https://api.whatsapp.com/send/?phone=447902478960&text&type=phone_number&app_absent=0"
             className="hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Facebook
+            Whatsapp
           </a>
-          <span>|</span>
+          <span className="hidden md:inline">|</span>
 
           <a
-            href="https://www.linkedin.com/in/sunny-weisheng-he/"
+            href="https://www.instagram.com/sunwei________/"
             className="hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             Instagram
           </a>
-          <span>|</span>
+          <span className="hidden md:inline">|</span>
 
           <a
             href="https://www.linkedin.com/in/sunny-weisheng-he/"

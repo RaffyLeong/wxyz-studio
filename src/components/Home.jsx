@@ -7,10 +7,8 @@ const ProjectThumbnail = ({ project, onClick }) => {
   return (
     <div
       onClick={() => onClick(project.id)}
-      className="bg-gray-100 rounded-md shadow-md cursor-pointer hover:bg-gray-200 transition duration-200"
-    >
-      <img src={project.image00} alt={project.title} className=" w-[900px] h-[700px] rounded-md" />
-      
+      className=" rounded-md p-2 shadow-md cursor-pointer border-[2px] border-gray-300 border-dashed transition duration-200">
+      <img src={project.image00} alt={project.title} className="w-full h-auto max-w-[900px] max-h-[700px] rounded-md" />
     </div>
   );
 };
@@ -18,11 +16,11 @@ const ProjectThumbnail = ({ project, onClick }) => {
 // Projects Show Case
 const ProjectShowcase = ({ project, onClose }) => {
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed top-0 left-0  w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
         <button onClick={onClose} className="absolute top-4 right-4 text-white hover:text-gray-600 text-3xl p-2 rounded-full transition">
           &times; {/* Close button */}
         </button>
-      <div className="bg-white p-8 rounded-md shadow-lg w-[80vw] h-[100vh] relative overflow-y-auto max-h-[90vh]"> 
+      <div className="bg-white p-8 rounded-md shadow-lg w-[80vw] h-[100vh] relative overflow-y-auto max-h-[90vh] border-t"> 
         <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
         <h3 className="mb-2 opacity-60">By {project.name}<span className="mx-2">·</span>{project.date}</h3>
         <img src={project.image01} alt={project.title} />

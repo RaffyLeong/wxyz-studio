@@ -29,7 +29,7 @@ const Sidebar = () => {
           <li className="mb-4">
             <button
               onClick={handleContactClick}
-              className="block py-2 px-4 hover:opacity-100 hover:bg-gray-300 rounded opacity-60 focus:bg-gray-300 focus:opacity-100 text-left w-full"
+              className="block py-2 px-4 hover:opacity-100  rounded opacity-70 focus:bg-gray-300 focus:opacity-100 text-left w-full"
             >
               Contact Us
             </button>
@@ -83,7 +83,7 @@ const Sidebar = () => {
           <li>
             <Link
               to="/about"
-              className="block py-2 px-4 mb-20 hover:opacity-100 hover:bg-gray-300 rounded opacity-60 focus:bg-gray-300 focus:opacity-100"
+              className="block py-2 px-4 mb-20 hover:opacity-100  rounded opacity-70 focus:bg-gray-300 focus:opacity-100"
             >
               About
             </Link>
