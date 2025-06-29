@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "/logo.jpg"
-import WXYZ from "/WXYZ.jpg"
+
 
 
 const Navbar = () => {
@@ -14,8 +14,8 @@ const Navbar = () => {
       </div>
 
       {/* Title  */}
-      <Link to="/">
-      <img className=" w-[200px] h-[30px]" src={WXYZ} alt="WXYZ"/> 
+      <Link to="/" className="text-[40px] font-normal tracking-wider relative group">
+      <span className="font-semibold">W</span>e<span className="font-semibold">H</span>e <span className="font-semibold ">Studio</span>
       </Link>
     </nav>
   )

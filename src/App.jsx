@@ -14,7 +14,7 @@ const App = () => {
     <div className="flex flex-col min-h-screen"> 
       <Navbar />
       <div className="flex flex-row flex-grow"> 
-        <main className="flex-grow p-4"> 
+        <main className="flex-grow p-4 overflow-y-auto" style={{ maxHeight: 'calc(100vh - <NavbarHeight>px - <FooterHeight>px)' }}> 
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

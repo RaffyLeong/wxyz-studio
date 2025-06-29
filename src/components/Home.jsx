@@ -8,7 +8,7 @@ const ProjectThumbnail = ({ project, onClick }) => {
     <div
       onClick={() => onClick(project.id)}
       className=" rounded-md p-2 shadow-md cursor-pointer border-[2px] border-gray-300 border-dashed transition duration-200">
-      <img src={project.image00} alt={project.title} className="w-full h-auto max-w-[900px] max-h-[700px] rounded-md" />
+      <img src={project.mainImage} alt={project.title} className="w-full h-auto max-w-[900px] max-h-[700px] rounded-md" />
     </div>
   );
 };
@@ -23,18 +23,9 @@ const ProjectShowcase = ({ project, onClose }) => {
       <div className="bg-white p-8 rounded-md shadow-lg w-[80vw] h-[100vh] relative overflow-y-auto max-h-[90vh] border-t"> 
         <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
         <h3 className="mb-2 opacity-60">By {project.name}<span className="mx-2">·</span>{project.date}</h3>
-        <img src={project.image01} alt={project.title} />
-        <img src={project.image02} alt={project.title} />
-        <img src={project.image03} alt={project.title} />
-        <img src={project.image04} alt={project.title} />
-        <img src={project.image05} alt={project.title} />
-        <img src={project.image06} alt={project.title} />
-        <img src={project.image07} alt={project.title} />
-        <img src={project.image08} alt={project.title} />
-        <img src={project.image09} alt={project.title} />
-        <img src={project.image10} alt={project.title} />
-        <img src={project.image11} alt={project.title} />
-        <img src={project.image12} alt={project.title} />       
+        {project.images.map((img, index) => (
+          <img key={index} src={img} alt={`${project.title} - Image ${index + 1}`} className="mb-4" />
+        ))}  
       </div>
     </div>
   );

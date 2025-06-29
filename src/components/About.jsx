@@ -3,9 +3,9 @@ const About = () => {
     <div className="container mx-auto py-12 px-4 md:px-8 lg:px-80 font-sans">
       {/* Section 1: Introduction */}
       <section className="mb-12">
-        <h2 className="text-[20px] font-semibold  mb-4">About WXYZ Studio</h2>
+        <h2 className="text-[20px] font-semibold  mb-4">About WeHe Studio</h2>
         <p className="text-[16px] opacity-60 leading-relaxed">
-          At WXYZ Studio, we reimagine spaces through the lens of generative design and computational innovation.
+          At WeHe Studio, we reimagine spaces through the lens of generative design and computational innovation.
           Rooted in the belief that architecture should evolve with its context, we craft dynamic,
           data-driven solutions for buildings, interiors, and urban environments—always harmonizing creativity with precision.
         </p>

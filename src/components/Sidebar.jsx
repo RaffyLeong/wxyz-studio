@@ -22,7 +22,7 @@ const Sidebar = () => {
   }, [location.pathname]);
 
   return (
-    <aside className="w-64 pr-10 mt-24  text-[28px] order-2">
+    <aside className="w-64 pr-10 mt-24 h-full text-[28px] order-2">
       <nav>
         <ul>
           {/* Contact */}
